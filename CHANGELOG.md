@@ -1,4 +1,4 @@
-#0.0.3
+# 0.0.3
 
 * Fix: remove depracated "trollop" gem dependency and add "optimist" gem dependency in it's place
 
