@@ -1,6 +1,6 @@
 require 'aws-sdk'
 require 'settingslogic'
-require 'trollop'
+require 'optimist'
 require 'redis'
 require 'time'
 
@@ -11,7 +11,7 @@ module Redis_to_S3
     end
     
     def initialize(argv)
-      @opts = Trollop::options do
+      @opts = Optimist::options do
         opt :config, "config file path", :type => :string, :default => '/etc/redis_to_s3/config.yml'
       end
 

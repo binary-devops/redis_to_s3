@@ -19,5 +19,5 @@ spec = Gem::Specification.new do |s|
   s.add_runtime_dependency('settingslogic')
   s.add_runtime_dependency('redis')
   s.add_runtime_dependency('aws-sdk')
-  s.add_runtime_dependency('trollop')
+  s.add_runtime_dependency('optimist')
 end
