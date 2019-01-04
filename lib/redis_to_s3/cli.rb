@@ -55,7 +55,7 @@ module Redis_to_S3
     def copy
       puts "Dump Chronicle Redis keys specified in #{@opts[:config]} config to #{@settings.dirs.temp}/binary_chronicle_redis.dump"
       # Get keys
-      redis = Redis.new(:port => @settings.redis.port)
+      redis = Redis.new(:port => @settings.port)
       keys = []
       @settings.redis.each do |pattern|
         keys += redis.scan_each(:match => "#{pattern}*").to_a
