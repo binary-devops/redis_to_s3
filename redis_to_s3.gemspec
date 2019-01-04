@@ -3,9 +3,9 @@ require File.join([File.dirname(__FILE__),'lib','redis_to_s3','version.rb'])
 spec = Gem::Specification.new do |s| 
   s.name = 'redis_to_s3'
   s.version = Redis_to_S3::VERSION
-  s.author = 'Kostiantyn Lysenko'
-  s.email = 'gshaud@gmail.com'
-  s.homepage = 'http://jakshi.com'
+  s.author = 'Sysadmin'
+  s.email = 'no-reply@binary.com'
+  s.homepage = 'https://www.binary.com'
   s.platform = Gem::Platform::RUBY
   s.summary = 'Redis to S3 dumper'
   s.description = 'Dump keys from Redis based an pattern from util config file and upload dump to S3'
